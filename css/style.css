@@ -534,7 +534,7 @@
     .hero-img {
         transform: translate(5rem, 30px);
         display: block;
-        width: 338px;
+        width: 370px;
     }
 
     .intro-text {
@@ -551,11 +551,14 @@
 
     @media only screen and (min-width: 640px) {
 
-
         nav {
             background-color: var(--light-gray);
             box-shadow: unset;
             max-width: 1440px;
+        }
+
+        #links-mobile, .menu-mobile {
+            display: none;
         }
 
         .menu-links ul li a {
@@ -701,9 +704,11 @@
             right: 0;
         }
 
-        .hero-img {
+        .hero-img{
+            width: 670px;
             display: flex;
         }
+            
 
         #hero {
             text-align: left;
