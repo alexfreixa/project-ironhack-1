@@ -1,29 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle | Empower Your Business</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/d925b7ae1f.js" crossorigin="anonymous"></script>
+  </head>
+  <body id="main-container">
+    <nav id="main-menu">
+      <div class="inner-main-menu">
+        <div class="menu-logo left">
+          <a href="#"><img src="images/logos/circle.svg" /></a>
+        </div>
+        <div class="menu-links center">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+        <div class="menu-cta right">
+          <a href="#" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </nav>
 
-</head>
-<body>
+    <section id="hero" class="flex column space-xl">
+      <div class="span6 intro-text">
+        <h1>Empower Your Business With Stunning Design!</h1>
+        <p>
+          Circle is a digital design and development studio. We design and
+          develop astonishing websites and mobile apps.
+        </p>
 
-    <h1>Heading H1 60 Bold</h1>
-    <h2>Heading H2 50 Bold</h2>
-    <h3>Heading H3 40 Bold</h3>
-    <h4>Heading H4 24 Bold</h4>
-    <p class="intro medium">Body Intro Text 24 Medium</p>
-    <p>Body Intro Text 20 Regular</p>
-    <p class="headline">Headline Text 17 Regular</p>
-    <p class="headline medium">Headline Text 17 Medium</p>
-    <p class="caption">Caption 1 Text 15 Regular</p>
-    <p class="caption small">Caption 2 Text 13 Regular</p>
-    
-</body>
+        <div class="hero-buttons-section">
+          <a href="#" class="btn">Get in Touch</a>
+          <a href="#" class="btn unstyled">See our work</a>
+        </div>
+      </div>
+      <div class="span6 img-col">
+        <img class="floating card1" src="images/hero-section/card-1.png">
+        <img class="floating card2" src="images/hero-section/card-2.png">
+        <img class="hero-img" src="images/hero-section/hero-image.png" />
+      </div>
+    </section>
+
+    <section id="clients" class="space-2xl">
+      <article>
+        <img src="images/logos/airbnb-logo.svg" />
+      </article>
+      <article>
+        <img src="images/logos/google-logo.svg" />
+      </article>
+      <article>
+        <img src="images/logos/microsoft-logo.svg" />
+      </article>
+      <article>
+        <img src="images/logos/fedex-logo.svg" />
+      </article>
+      <article>
+        <img src="images/logos/amazon-logo.svg" />
+      </article>
+    </section>
+
+    <section id="projects" class="space-l">
+        <h3 class="w-full">Recent projects</h3>
+        <div class="cards flex">
+      <article class="span4">
+        <div class="card">
+          <img class="max-w-100" src="images/projects-section/1.jpg" />
+          <div class="card-text">
+            <h3 class="intro medium">Simplify</h3>
+            <p>UI Design & App Development</p>
+            <a href="#" class="link medium">Learn more</a>
+          </div>
+        </div>
+      </article>
+      <article class="span4">
+        <div class="card">
+          <img class="max-w-100" src="images/projects-section/1.jpg" />
+          <div class="card-text">
+            <h3 class="intro medium">Simplify</h3>
+            <p>UI Design & App Development</p>
+            <a href="#" class="link medium">Learn more</a>
+          </div>
+        </div>
+      </article>
+      <article class="span4">
+        <div class="card">
+          <img class="max-w-100" src="images/projects-section/1.jpg" />
+          <div class="card-text">
+            <h3 class="intro medium">Simplify</h3>
+            <p>UI Design & App Development</p>
+            <a href="#" class="link medium">Learn more</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    </section>
+
+    <section id="reviews" class="dark-bg inner-padding">
+        <h3 class="white">Hear What Our Clients Have to Say</h3>
+        <h4 class="secondary">“Circle helped us through every stage of our startup. We really enjoyed working with you.”</h4>
+        <div class="testimonial">
+          <img src="images/testimonial-section/profile.png">
+            <div class="testimonial-text-wrapper">    
+                <h4 class="headline secondary">Kristin Watson</h4>
+                <p class="caption small white">Booking.com</p>
+          </div>
+        </div>
+    </section>
+
+    <section id="services" class="space-l">
+        <h3 class="w-full">Our services</h3>
+        <div class="cards flex">
+        <article class="span4">
+            <div class="card icon-card">
+                <div class="icon-wrapper">
+                <img src="images/services-section/icons/1.svg" />
+            </div>
+              <div class="card-text">
+                <h3 class="intro medium">User Interface Design</h3>
+                <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                <a href="#" class="link medium">Learn more</a>
+              </div>
+            </div>
+          </article>
+          <article class="span4">
+            <div class="card icon-card">
+                <div class="icon-wrapper">
+                <img src="images/services-section/icons/2.svg" />
+            </div>
+              <div class="card-text">
+                <h3 class="intro medium">User Experience Design</h3>
+                <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                <a href="#" class="link medium">Learn more</a>
+              </div>
+            </div>
+          </article>
+          <article class="span4">
+            <div class="card icon-card">
+                <div class="icon-wrapper">
+                    <img src="images/services-section/icons/3.svg" />
+                </div>
+                <div class="card-text">
+                    <h3 class="intro medium">Application Development</h3>
+                    <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                    <a href="#" class="link medium">Learn more</a>
+                </div>
+            </div>
+          </article>
+        </div>
+    </section>
+    <section id="newsletter" class="secondary-bg space-l center inner-padding">
+        <h3>Hear What Our Clients Have to Say</h3>
+        <h4 class="intro regular">Let us help you!</h4>
+        <form>
+            <i class="fa-regular fa-envelope icon-placeholder"></i>
+          <input id="email" type="email" placeholder="Enter Your Email" required>
+            <button class="btn">Subscribe</button>
+
+        </form>
+    </section>
+    <footer class="flex align-center">
+        <div class="span3">
+            <img class="logo-footer" src="images/logos/circle.svg">
+            <p class="headline">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div class="span8 grid neural">
+          <div class="grid-item"><a href="#">Team</a></div>
+          <div class="grid-item"><a href="#">Services</a></div>
+          <div class="grid-item"><a href="#">About Us</a></div>
+          <div class="grid-item"><a href="#">Press</a></div>
+          <div class="grid-item"><a href="#">Projects</a></div>
+          <div class="grid-item"><a href="#">Privacy Policy</a></div>
+        </div>
+    </footer>
+  </body>
 </html>
