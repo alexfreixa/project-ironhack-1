@@ -549,7 +549,70 @@
         overflow: hidden;
     }
 
+    /* Project Single CSS */
+
+    .flex.wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-meta {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .date.span3 {
+        text-align: left;
+    }
+
+    .titles p.intro.medium {
+        padding-bottom: 0;
+    }
+
+    .project-cover {
+        padding: 20px 0px;
+    }
+
+    .space-m {
+        padding-top: 100px;
+    }
+
+    /* End Project Single CSS - Mobile */
+
     @media only screen and (min-width: 640px) {
+
+    /* Project Single CSS */
+
+        .flex.wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .project-meta {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            align-items: flex-end;
+        }
+
+        .titles p.intro.medium {
+            padding-bottom: 0;
+        }
+
+        .titles {
+            width: 100%;
+        }
+
+        .date.span3 {
+            padding-bottom: 8px;
+            text-align: right;
+        }
+
+        .project-cover {
+            padding: 60px 0px;
+        }
+
+        /* End Project Single CSS - Desktop */
 
         nav {
             background-color: var(--light-gray);
@@ -686,7 +749,7 @@
         #newsletter input::placeholder {
             text-align: left;
         }
-
+           
         .space-l {
             padding-top: 150px;
         }
