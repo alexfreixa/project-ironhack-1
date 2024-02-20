@@ -581,6 +581,17 @@
 
     @media only screen and (min-width: 640px) {
 
+    /*Contact Form CSS - Desktop*/
+
+    #contacte input {
+        padding: 20px;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        background: var(--light-gray);
+    }
+    /*End Contact Form CSS - Desktop*/
+
     /* Project Single CSS */
 
         .flex.wrap {
@@ -743,7 +754,6 @@
 
         #newsletter input {
             padding: 30px 139px 30px 61px;
-
         }
 
         #newsletter input::placeholder {
