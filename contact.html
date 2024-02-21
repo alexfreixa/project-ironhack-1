@@ -30,7 +30,7 @@
         </div>
         <div class="menu-mobile">
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a href="#" class="icon">
+          <a href="#" id="menuLink" class="icon">
             <i class="fa fa-bars"></i>
           </a>
         </div>
@@ -45,18 +45,22 @@
     <section id="contact-form" class="flex wrap space-xl">
         <h1 class="w-full">Contact form</h1>
         <form id="contacte" class="w-full">
-            <label for="name">Full Name*</label>
+            <label for="name">Full Name *</label>
             <input id="name"  class="w-full" type="text" placeholder="Enter your full name">
 
-            <label for="email">Email</label>
-            <input id="email" class="span6" type="email" placeholder="Enter your email address">
-
-            <label for="phone">Phone</label>
-            <input id="phone"  class="span6" type="text" placeholder="Enter your phone number">
+            <div class="w-full flex gap40">  
+              <div class="span6">
+                <label for="email">Email</label>  
+                <input id="email" class="span6" type="email" placeholder="Enter your email address">
+              </div>
+              <div class="span6">
+                <label for="phone">Phone</label>
+                <input id="phone"  class="span6" type="text" placeholder="Enter your phone number">
+              </div>
+            </div>
 
             <label for="message">Message</label>
-            <textarea  class="w-full" id="message" type="text" placeholder="Write your message here ...." rows="8">
-            </textarea>
+            <textarea  class="w-full" id="message" type="text" placeholder="Write your message here ...." rows="8"></textarea>
 
             <button class="btn w-full center">Submit</button>
 

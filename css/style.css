@@ -8,6 +8,7 @@
         --gray: #6B708D;
         --light-gray: #F2F4FC;
         --secondary: #FFC600;
+        --bg-white: #F4F6FC;
     }
 
     * {
@@ -17,7 +18,9 @@
     }
 
     body,
-    input {
+    input,
+    textarea,
+    button {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -41,6 +44,11 @@
     h4.intro.regular {
         font-size: 20px;
         font-weight: 400;
+    }
+
+    label, button {
+        font-size: 20px;
+        color: var(--gray);
     }
 
     h1,
@@ -72,6 +80,7 @@
 
     .headline,
     input,
+    textarea,
     button,
     .card p,
     .card .link {
@@ -101,7 +110,7 @@
     body {
         max-width: 1440px;
         margin: 0 auto;
-        background-color: var(--light-gray);
+        background-color: var(--bg-white);
     }
 
     nav {
@@ -244,7 +253,6 @@
 
     .w-full {
         width: 100%;
-        text-align: center;
     }
 
     .m-auto {
@@ -474,7 +482,7 @@
     }
 
     #newsletter .btn,
-    #newsletter input {
+    #newsletter input{
         margin-top: 25px;
         padding: 20px 40px;
         border: none;
@@ -579,17 +587,63 @@
 
     /* End Project Single CSS - Mobile */
 
+    /*Contact Form CSS - Mobile*/
+
+    #contacte input, #contacte textarea {
+        padding: 25px;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        background: #6b708d29;
+        border: none;
+        width: 100%;
+    }
+
+    .form-2col {
+        width: 50%;
+    }
+
+    #contacte button {
+        border: none;
+        text-align: center;
+        padding: 25px;
+    }
+
+    #contacte .flex {
+        flex-direction: column;
+    }
+
+    /*End Contact Form CSS - Mobile*/
+
+
     @media only screen and (min-width: 640px) {
 
     /*Contact Form CSS - Desktop*/
 
-    #contacte input {
-        padding: 20px;
+    #contacte input, #contacte textarea {
+        padding: 25px;
         display: flex;
         margin-top: 10px;
-        margin-bottom: 40px;
-        background: var(--light-gray);
     }
+    
+    .gap40 {
+        gap: 40px;
+    }
+
+    .form-2col {
+        width: 50%;
+    }
+
+    #contacte button {
+        border: none;
+        text-align: center;
+        padding: 25px;
+    }
+
+    #contacte .flex {
+        flex-direction: unset;
+    }
+
     /*End Contact Form CSS - Desktop*/
 
     /* Project Single CSS */
