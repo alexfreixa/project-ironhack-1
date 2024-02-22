@@ -6,7 +6,7 @@
     <title>Circle | Empower Your Business</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
-
+    <script src="js/single-project.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
@@ -16,86 +16,54 @@
     <nav id="main-menu">
       <div class="inner-main-menu">
         <div class="menu-logo left">
-          <a href="#"><img src="images/logos/circle.svg" /></a>
+          <a href="/project-ironhack-1/home.html"><img src="images/logos/circle.svg" /></a>
         </div>
         <div class="menu-links center">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="/project-ironhack-1/home.html">Home</a></li>
+            <li><a href="/project-ironhack-1/home.html#projects">Projects</a></li>
+            <li><a href="/project-ironhack-1/home.html#services">Services</a></li>
           </ul>
         </div>
         <div class="menu-cta right">
-          <a href="#" class="btn">Contact Us</a>
+          <a href="/project-ironhack-1/contact.html" class="btn">Contact Us</a>
         </div>
         <div class="menu-mobile">
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a href="#" class="icon">
+          <a href="#" id="menuLink" class="icon">
             <i class="fa fa-bars"></i>
           </a>
         </div>
       </div>
     </nav>
     <div id="links-mobile">
-      <a href="#">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#services">Services</a>
+      <a href="/project-ironhack-1/home.html">Home</a>
+      <a href="/project-ironhack-1/home.html#projects">Projects</a>
+      <a href="/project-ironhack-1/home.html#services">Services</a>
     </div>
 
     <section id="single-project" class="flex wrap space-xl">
         <div class="project-meta">
             <div class="titles span8">    
-                <h1 class="project-title">Simplify</h1>
-                <p class="intro medium">UI Design & App Development</p>
+                <h1 id="ptitle" class="project-title"></h1>
+                <p id="pdescription" class="intro medium"></p>
             </div>
             <div class="date span3">
-                <span class="headline">Completed on June 22, 2021</span>
+                <span id="pdate" class="headline"></span>
             </div>
         </div>
         <div class="project-content">
             <div class="project-cover">
-                <img class="max-w-100" src="images/projects-section/1.jpg">
+                <img id="pimage" class="max-w-100" src="images/projects-section/1.jpg">
             </div>
-            <div class="project-body">
-                <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
-                <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nis cillum minim tempor enim.</p>
+            <div id="pcontent" class="project-body">
             </div>
         </div>
     </section>
 
     <section id="projects" class="space-m">
         <h3 class="w-full">Other projects</h3>
-        <div class="cards flex">
-      <article class="span4">
-        <div class="card">
-          <img class="max-w-100" src="images/projects-section/1.jpg" />
-          <div class="card-text">
-            <h3 class="intro medium">Simplify</h3>
-            <p>UI Design & App Development</p>
-            <a href="#" class="link medium">Learn more</a>
-          </div>
-        </div>
-      </article>
-      <article class="span4">
-        <div class="card">
-          <img class="max-w-100" src="images/projects-section/1.jpg" />
-          <div class="card-text">
-            <h3 class="intro medium">Simplify</h3>
-            <p>UI Design & App Development</p>
-            <a href="#" class="link medium">Learn more</a>
-          </div>
-        </div>
-      </article>
-      <article class="span4">
-        <div class="card">
-          <img class="max-w-100" src="images/projects-section/1.jpg" />
-          <div class="card-text">
-            <h3 class="intro medium">Simplify</h3>
-            <p>UI Design & App Development</p>
-            <a href="#" class="link medium">Learn more</a>
-          </div>
-        </div>
-      </article>
+        <div id="cards-container" class="cards flex">
+
     </div>
     </section>
 

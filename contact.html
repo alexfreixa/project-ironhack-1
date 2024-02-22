@@ -16,20 +16,19 @@
     <nav id="main-menu">
       <div class="inner-main-menu">
         <div class="menu-logo left">
-          <a href="#"><img src="images/logos/circle.svg" /></a>
+          <a href="/project-ironhack-1/home.html"><img src="images/logos/circle.svg" /></a>
         </div>
         <div class="menu-links center">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="/project-ironhack-1/home.html">Home</a></li>
+            <li><a href="/project-ironhack-1/home.html#projects">Projects</a></li>
+            <li><a href="/project-ironhack-1/home.html#services">Services</a></li>
           </ul>
         </div>
         <div class="menu-cta right">
-          <a href="#" class="btn">Contact Us</a>
+          <a href="/project-ironhack-1/contact.html" class="btn">Contact Us</a>
         </div>
         <div class="menu-mobile">
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           <a href="#" id="menuLink" class="icon">
             <i class="fa fa-bars"></i>
           </a>
@@ -37,30 +36,30 @@
       </div>
     </nav>
     <div id="links-mobile">
-      <a href="#">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#services">Services</a>
+      <a href="/project-ironhack-1/home.html">Home</a>
+      <a href="/project-ironhack-1/home.html#projects">Projects</a>
+      <a href="/project-ironhack-1/home.html#services">Services</a>
     </div>
 
-    <section id="contact-form" class="flex wrap space-xl">
+    <section id="contact-form" class="flex wrap space-3xl">
         <h1 class="w-full">Contact form</h1>
         <form id="contacte" class="w-full">
             <label for="name">Full Name *</label>
-            <input id="name"  class="w-full" type="text" placeholder="Enter your full name">
+            <input id="name"  class="w-full" type="text" placeholder="Enter your full name" required>
 
             <div class="w-full flex gap40">  
               <div class="span6">
                 <label for="email">Email</label>  
-                <input id="email" class="span6" type="email" placeholder="Enter your email address">
+                <input id="email" class="span6" type="email" placeholder="Enter your email address"  required>
               </div>
               <div class="span6">
                 <label for="phone">Phone</label>
-                <input id="phone"  class="span6" type="text" placeholder="Enter your phone number">
+                <input id="phone"  class="span6" type="tel" placeholder="Enter your phone number"  required>
               </div>
             </div>
 
             <label for="message">Message</label>
-            <textarea  class="w-full" id="message" type="text" placeholder="Write your message here ...." rows="8"></textarea>
+            <textarea  class="w-full" id="message" type="text" placeholder="Write your message here ...." rows="8"  required></textarea>
 
             <button class="btn w-full center">Submit</button>
 
