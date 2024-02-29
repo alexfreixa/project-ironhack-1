@@ -15,9 +15,7 @@ window.addEventListener("load", (event) => {
       const date = document.getElementById('pdate');
       const image = document.getElementById('pimage');
       const content = document.getElementById('pcontent');
-      const link = document.getElementById('plink')
 
-      
         title.innerHTML = singleProject.name; // Use singleProject instead of project
         description.innerHTML = singleProject.description;
         date.innerHTML = singleProject.completed_on;

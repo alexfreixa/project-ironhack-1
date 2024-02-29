@@ -251,6 +251,11 @@
         padding: 14px;
     }
 
+    .notfound {
+        text-align: center;
+        padding: 30px 0px;
+    }
+
     .w-full {
         width: 100%;
     }
@@ -613,6 +618,24 @@
         flex-direction: column;
     }
 
+    span.msg-error {
+        background-color: palevioletred;
+        padding: 11px;
+        display: flex;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .hidden, span.msg-error.hidden {
+        display: none;
+    }
+
+    span#textCount {
+        font-size: 15px;
+        color: var(--gray);
+    }
+
     /*End Contact Form CSS - Mobile*/
 
 
@@ -700,10 +723,6 @@
 
         .hero-buttons-section {
             justify-content: left;
-        }
-
-        .w-full {
-            text-align: left;
         }
 
         footer.flex {

@@ -6,6 +6,7 @@
     <title>Circle | Empower Your Business</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
+    <script src="js/form-validator.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,21 +47,25 @@
         <form id="contacte" class="w-full">
             <label for="name">Full Name *</label>
             <input id="name"  class="w-full" type="text" placeholder="Enter your full name" required>
+            <span class="msg-error input-name hidden">There's an error in this field.</span>
 
             <div class="w-full flex gap40">  
               <div class="span6">
                 <label for="email">Email</label>  
                 <input id="email" class="span6" type="email" placeholder="Enter your email address"  required>
+                <span class="msg-error input-email hidden">There's an error in this field.</span>
               </div>
               <div class="span6">
                 <label for="phone">Phone</label>
                 <input id="phone"  class="span6" type="tel" placeholder="Enter your phone number"  required>
+                <span class="msg-error input-phone hidden">There's an error in this field.</span>
               </div>
             </div>
 
-            <label for="message">Message</label>
-            <textarea  class="w-full" id="message" type="text" placeholder="Write your message here ...." rows="8"  required></textarea>
-
+            <label for="message">Message <span id="textCount">(<span id="charsLeft">100</span>/100)</span></label>
+            <textarea  class="w-full" id="message" type="text" placeholder="Write your message here ...." rows="8" maxlength="100" required></textarea>
+            
+            <span class="msg-error input-message hidden">There's an error in this field.</span>
             <button class="btn w-full center">Submit</button>
 
         </form>
