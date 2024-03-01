@@ -43,7 +43,7 @@ async function displayProjects(limit = 0) {
                     <div class="card-text">
                         <h3 class="intro medium">${project.name}</h3>
                         <p>${project.description}</p>
-                        <a href="/project-ironhack-1/projects/1.html" class="link medium">Learn more</a>
+                        <a href="/projects/1.html" class="link medium">Learn more</a>
                     </div>
                 </div>
             </article>`;
